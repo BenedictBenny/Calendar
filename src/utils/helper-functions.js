@@ -16,7 +16,6 @@ export const findNextDay = (day) => {
         case 'May':
           dayVar[0] = 'Jun';
           dayVar[1] = '01';
-          console.log(dayVar, "check may30")
           break;
         case 'Jul':
           dayVar[0] = 'Aug';
@@ -44,7 +43,6 @@ export const findNextDay = (day) => {
 
     if( dayVar[1] === '30'){
       let flag=0;
-      console.log("check 30");
       switch (dayVar[0]){
         case 'Feb':
           dayVar[0] = 'Mar';
@@ -85,9 +83,7 @@ export const findNextDay = (day) => {
 }
 
 export const findPrevDay = (day) => {
-    // console.log(day);
     let dayVar = day.split(" ");
-    // console.log(dayVar);
     if( dayVar[1] === '01'){
       switch (dayVar[0]){
         case 'Jan':
