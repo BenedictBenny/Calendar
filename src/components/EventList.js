@@ -43,6 +43,6 @@ function EventList ({editHandler, deleteHandler, dayEvents}) {
 EventList.propTypes = {
     editHandler: propTypes.func,
     deleteHandler: propTypes.func,
-    dayEvents: propTypes.object
+    dayEvents: propTypes.array
 };
 export default EventList;
